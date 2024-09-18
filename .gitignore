@@ -44,3 +44,11 @@ ios/build/
 
 # Ignore environment configuration files
 .env
+
+# HTML/CSS/JS specific
+dist/
+build/
+*.cache
+*.tmp
+*.swp
+*.swo
