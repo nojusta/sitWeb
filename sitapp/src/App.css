@@ -20,9 +20,22 @@ h1 {
 }
 
 .map-container {
-  height: 700px;
-  width: 900px;
+  height: 500px;
+  width: 700px;
   border: 2px solid black ;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.cluster-icon {
+  background-color: #333;
+  height: 2em;
+  width: 2em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0px 5px #fff;
 }
