@@ -1,0 +1,12 @@
+h1{
+    color: white;
+    font-size: 4rem;
+    margin-top: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+}

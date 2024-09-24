@@ -5,7 +5,7 @@ import './index.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <h1> filmas</h1>
+    <img src="src/components/sitv2.png" alt="sitapp-logo" />
     <App />
   </StrictMode>,
 )

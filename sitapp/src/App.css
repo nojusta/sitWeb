@@ -4,6 +4,7 @@ body, html {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
+  background-color: rgb(25, 25, 25);
 }
 
 #root {
@@ -21,8 +22,8 @@ h1 {
 
 .map-container {
   height: 500px;
-  width: 700px;
-  border: 2px solid black ;
+  width: 800px;
+  border: 10px solid white;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -38,4 +39,41 @@ h1 {
   border-radius: 50%;
   font-size: 1.2rem;
   box-shadow: 0 0 0px 5px #fff;
+}
+
+.sidebar-map {
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.marker-form {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.marker-form input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 200px;
+}
+
+.marker-form button {
+  padding: 5px 10px;
+  background-color: gray;
+  color: white;
+  align-content: right;
 }
