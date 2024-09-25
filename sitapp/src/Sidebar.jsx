@@ -18,7 +18,7 @@ const Sidebar = ({ isOpen, onClose, selectedMarker, address }) => {
           <p>No place like home!</p>
         </div>
       )}
-      <img src={sitappLogo} alt="sitapp-logo" className="sidebar-img" />
+      <img src=".src/component/sit.png" alt="sitapp-logo" className="sidebar-img" />
     </div>
   );
 };

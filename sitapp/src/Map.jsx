@@ -59,6 +59,7 @@ const Map = () => {
   const [markers, setMarkers] = useState(initialMarkers);
   const [newMarker, setNewMarker] = useState({ name: '', geocode: '', details: '', address:'' });
   const [address, setAddress] = useState('');
+  const [fullCoords, setFullCoords] = useState({ lat: null, lng: null });
 
   const onMarkerClick = (marker) => {
     setSelectedMarker(marker);
@@ -72,7 +73,11 @@ const Map = () => {
   };
 
   const reverseGeocode = async (lat, lng) => {
-    const apiKey = process.env.REACT_APP_OPENCAGE_API_KEY; 
+    const apiKey = import.meta.env.VITE_OPENCAGE_API_KEY;
+  if (!apiKey) {
+    console.error('OpenCage API key is missing!');
+    return 'Unknown address';
+  }
     const url = `https://api.opencagedata.com/geocode/v1/json?q=${lat}+${lng}&key=${apiKey}`;
     try {
       const response = await axios.get(url);
@@ -98,7 +103,9 @@ const Map = () => {
       click: async (e) => {
         const { lat, lng } = e.latlng;
         const address = await reverseGeocode(lat, lng);
-        setNewMarker({ ...newMarker, geocode: `${lat.toFixed(2)}, ${lng.toFixed(2)}`, address });
+        console.log('Map clicked at:', lat, lng);
+        setFullCoords({ lat, lng });
+        setNewMarker({ ...newMarker, geocode: `${lat}, ${lng}`, address });
         setAddress(address);
       },
     });
