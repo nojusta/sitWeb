@@ -4,7 +4,7 @@ import 'leaflet/dist/leaflet.css';
 import L, { divIcon, point } from 'leaflet';
 import 'leaflet-routing-machine';
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'; // Correct import statement
-import './App.css'; // Import the CSS file
+import './Map.css'; // Import the CSS file
 import axios from 'axios';
 import customIconImage from './components/sit.png'; // Import the custom icon image
 import customIconImageLocation from './components/location_map_marker.svg'; // Import the custom icon image for device location
