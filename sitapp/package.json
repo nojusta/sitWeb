@@ -10,12 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/leaflet-routing-machine": "^3.2.8",
     "dotenv": "^10.0.0",
     "leaflet": "^1.9.4",
+    "leaflet-routing-machine": "^3.2.12",
     "leaflet.markercluster": "^1.5.3",
     "maplibre-gl": "^4.7.1",
     "maplibre-react-components": "^0.1.8",
     "maplibre-theme": "^0.1.1",
+    "node-fetch": "^3.3.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",

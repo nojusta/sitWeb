@@ -1,7 +1,7 @@
 import React from 'react';
 import './Sidebar.css'; // Import the CSS file for the sidebar
 
-const Sidebar = ({ isOpen, onClose, selectedMarker, address }) => {
+const Sidebar = ({ isOpen, onClose, selectedMarker, address, /*onGetDirections*/ }) => {
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''}`}>
       <button className="close-btn" onClick={onClose}>×</button>
@@ -11,6 +11,7 @@ const Sidebar = ({ isOpen, onClose, selectedMarker, address }) => {
           <p><strong>Name:</strong> {selectedMarker.name}</p>
           <p><strong>Details:</strong> {selectedMarker.details}</p>
           <p><strong>Address:</strong> {address}</p>
+          {/*<button onClick={onGetDirections}>Go</button>*/}
         </div>
       ) : (
         <div>
@@ -18,7 +19,7 @@ const Sidebar = ({ isOpen, onClose, selectedMarker, address }) => {
           <p>No place like home!</p>
         </div>
       )}
-      <img src=".src/component/sit.png" alt="sitapp-logo" className="sidebar-img" />
+      <img src="src/components/sitv2.png" alt="sitapp-logo" className="sidebar-img" />
     </div>
   );
 };
