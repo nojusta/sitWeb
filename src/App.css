@@ -1,0 +1,80 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: rgb(25, 25, 25);
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.map-container {
+  height: 500px;
+  width: 800px;
+  border: 10px solid white;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cluster-icon {
+  background-color: #333;
+  height: 2em;
+  width: 2em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0px 5px #fff;
+}
+
+.sidebar-map {
+  height: 100vh;
+  width: 100%;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.sidebar-content {
+  padding: 20px;
+}
+
+.marker-form {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  background: white;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.marker-form input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 200px;
+}
+
+.marker-form button {
+  padding: 5px 10px;
+  background-color: gray;
+  color: white;
+  align-content: right;
+}
